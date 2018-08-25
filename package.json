@@ -19,6 +19,8 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "vue-gh-pages": "^1.18.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
   }
 }
