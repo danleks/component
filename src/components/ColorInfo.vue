@@ -1,4 +1,5 @@
 <template>
+
         <div v-if="!this.lColor" class="color-init-block">
             <p class="color-init-block__text">Choose color</p>
         </div>
@@ -39,11 +40,8 @@ export default {
 
 
 <style scoped lang="scss">
-    .color-init-block {
-        height: 100%;
-        background-color: rgba(#ccc, .4);
 
-        &__text {
+    @mixin paragraphStyle() {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -51,23 +49,26 @@ export default {
 
             font-size: 24px;
             text-transform: uppercase;
+            text-align: center;
+    }
+
+    .color-init-block {
+        height: 196px;
+        background-color: rgba(#ccc, .4);
+
+        &__text {
+            @include paragraphStyle;
             color: #000;
         }
     }
     .color-info-block {
         position: relative;
-        height: 100%;
+        height: 196px;
         border-radius: 2px;
 
 
         &__text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            font-size: 24px;
-            text-transform: uppercase;
+            @include paragraphStyle;
             color: #fff;
         }
 

@@ -1,8 +1,12 @@
 <template>
-    <div class="container">
+    <div>
+
         <app-header></app-header>
+        <div class="container">
         <app-colors></app-colors>
     </div>
+    </div>
+
 
 </template>
 
