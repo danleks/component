@@ -1,5 +1,5 @@
 <template>
-   <div class="row">
+   <div class="row mb-4">
         <div class="col-md-6">
             <ul class="list-group">
                 <app-color v-for="color in colors" :key="color.id" :color="color"></app-color>
